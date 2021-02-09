@@ -1,0 +1,18 @@
+<%- include ("./partials/top",{name:name}); %>
+
+<div class="container mt-5">
+    <h1 class="text-white mb-3"><%=movieData.Title%></h1>
+    <!--Card-->
+  <div class="card flex-row flex-wrap">
+    <div class="card-header border-0">
+      <img src="<%=movieData.Poster%>" alt="Poster" />
+    </div>
+    <div class="card-block px-2">
+      <h4 class="card-title"><%=movieData.Title%></h4>
+      <p class="card-text"><%=movieData.Plot%></p>
+      <p class="card-text">Actors: <%=movieData.Actors%></p>
+    </div>
+    <div class="w-100"></div>
+    <div class="card-footer w-100 text-muted">Box Office: <%=movieData.BoxOffice%></div>
+  </div>
+</div>
